@@ -40,7 +40,7 @@ function loadInitialDataIfNeeded(){
 }
 
 function saveToStorage(){
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(jogadoras));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(jogadores));
 }
 
 function renderCards(list){

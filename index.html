@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro de Jogadoras - Futebol Feminino</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Cadastro de Jogadoras — Futebol Feminino</h1>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="left-controls">
+        <input id="searchInput" type="search" placeholder="Buscar por nome ou posição..." />
+        <select id="filterClub">
+          <option value="">Filtrar por clube (Todos)</option>
+        </select>
+        <div class="sort-group">
+          <button id="sortNameBtn" class="btn">Ordenar por Nome</button>
+          <button id="sortPositionBtn" class="btn">Ordenar por Posição</button>
+        </div>
+      </div>
+      <div class="right-controls">
+        <button id="showAddFormBtn" class="btn primary">Adicionar Jogadora</button>
+      </div>
+    </section>
+
+    <section id="formSection" class="form-section hidden">
+      <h2 id="formTitle">Adicionar Jogadora</h2>
+      <form id="playerForm" novalidate>
+        <input type="hidden" id="editIndex" value="-1" />
+        <div class="form-row">
+          <label>Nome</label>
+          <input id="nome" type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Posição</label>
+          <input id="posicao" type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Clube</label>
+          <input id="clube" type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Foto (URL)</label>
+          <input id="foto" type="url" required />
+        </div>
+        <div class="form-row stats-row">
+          <div>
+            <label>Gols</label>
+            <input id="gols" type="number" min="0" required />
+          </div>
+          <div>
+            <label>Assistências</label>
+            <input id="assistencias" type="number" min="0" required />
+          </div>
+          <div>
+            <label>Jogos</label>
+            <input id="jogos" type="number" min="0" required />
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn primary" id="saveBtn">Salvar</button>
+          <button type="button" class="btn" id="cancelBtn">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="cardsContainer" class="cards-grid">
+    </section>
+
+    <footer class="footer">
+      <small>Dados armazenados localmente no LocalStorage - chave: <code>jogadoras</code></small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,9 @@
 # CP4-WebDev
 # Passa a Bola - Cadastro de Jogadoras de Futebol Feminino
 
+## Link do Pages
+https://jvmtts.github.io/CP4-WebDev
+
 ## Descrição do Projeto  
 
 O **Passa a Bola** é um projeto esportivo com o objetivo de facilitar a prática de futebol para mulheres, oferecendo um espaço e um grupo para jogar, o objetivo do projeto é criar uma pagina onde possa ver o nome e a estatística das jogadoras, tendo como principal objetivo **cadastrar, listar e gerenciar jogadoras de futebol feminino**, permitindo que o usuário explore informações, marque favoritas e organize a visualização.  
